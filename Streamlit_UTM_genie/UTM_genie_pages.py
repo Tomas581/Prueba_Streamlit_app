@@ -25,7 +25,7 @@ pg.run()
 
 #with st.sidebar:
 #    selection = option_menu("Menu", ["Fast URL checker", "URLs via file", "URL parameters creator", "UTM Campaign Builder"], 
-                            icons=['dash', 'file-earmark',  "dash", "dash"], menu_icon="menu-button-fill", default_index=0)
+#                            icons=['dash', 'file-earmark',  "dash", "dash"], menu_icon="menu-button-fill", default_index=0)
 
 # Cargar la página seleccionada
 #if selection == "Fast URL checker":
