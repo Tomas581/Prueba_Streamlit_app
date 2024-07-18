@@ -29,7 +29,7 @@ def remove_URL_spaces_csv(doc, new_doc="New URL file"):
                         new_URL = new_URL + letter
                     elif letter == "%":
                          num_espaces = num_espaces + 1
-                message = ("There were " + str(num_espaces) + " spaces in your URL on line " + str(url_index+1) + ", this is your new URL without spaces" + "; " + new_URL)
+                message = ("There were " + str(num_espaces) + " spaces in your URL on line " + str(url_index+1) + " this is your new URL without spaces" + "; " + new_URL)
                 new_URL_file.writerow([message])
             else:
                 message = ("There were no space in your URL on the line " + str(url_index+1) + "; " + i)
