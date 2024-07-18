@@ -1,8 +1,4 @@
-streamlit
-streamlit-extras
-streamlit-option-menu
-io
-openpyxl
-openpyxl.styles
-csv
-pyperclip
+streamlit==1.36.0
+streamlit-extras==0.4.3
+streamlit-option-menu==0.3.13
+pyperclip==1.9.0
