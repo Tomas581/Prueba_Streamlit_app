@@ -1,5 +1,6 @@
-streamlit_extras.app_logo
-streamlit_option_menu
+streamlit
+streamlit-extras
+streamlit-option-menu
 io
 openpyxl
 openpyxl.styles
