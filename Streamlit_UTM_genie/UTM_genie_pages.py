@@ -21,7 +21,7 @@ from streamlit_option_menu import option_menu
 
 
 st.set_page_config(layout="wide")
-add_logo("240x240.jpg", height=300)
+#add_logo("240x240.jpg", height=300)
 
 with st.sidebar:
     selection = option_menu("Menu", ["Fast URL checker", "URLs via file", "URL parameters creator", "UTM Campaign Builder"], 
