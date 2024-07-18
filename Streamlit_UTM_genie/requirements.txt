@@ -3,4 +3,5 @@ streamlit-extras==0.4.3
 streamlit-option-menu==0.3.13
 pyperclip==1.9.0
 openpyxl
-pip install PyQt4
+gtk
+PyQt4
