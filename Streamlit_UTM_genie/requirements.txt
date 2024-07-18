@@ -1,7 +1,6 @@
-upgrade pip
 streamlit==1.36.0
 streamlit-extras==0.4.3
 streamlit-option-menu==0.3.13
 pyperclip==1.9.0
 openpyxl
-pip install gtk==2.24.2
+pip install PyQt4
