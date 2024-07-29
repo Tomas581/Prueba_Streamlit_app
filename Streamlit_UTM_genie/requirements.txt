@@ -4,3 +4,4 @@ streamlit-option-menu==0.3.13
 pyperclip==1.9.0
 openpyxl
 PyQt5
+st-copy-to-clipboard==0.1.6
