@@ -1,4 +1,5 @@
 import streamlit as st
+from st_copy_to_clipboard import st_copy_to_clipboard
 
 from Functions import *
 from Functions.Remove_URL_spaces import remove_URL_spaces
@@ -13,9 +14,12 @@ st.info("In case the URL contains spaces, this circumstance will be indicated al
 st.divider()
 st.text_input("Enter your URL to check for spaces and, if found, remove them:", key="url_to_check")
 st.text("")
-st.markdown(st.session_state.url_to_check)
 
 # ------------------------------------------------------------------------------------------------------------------------------
 
-remove_URL_spaces(st.session_state.url_to_check)
+final_URL = remove_URL_spaces(st.session_state.url_to_check)
 
+if final_URL != "":
+    # Checks if the URL is not blank, if not displays copy button. 
+    st.markdown("Click de following button to copy the link")
+    st_copy_to_clipboard(final_URL)
