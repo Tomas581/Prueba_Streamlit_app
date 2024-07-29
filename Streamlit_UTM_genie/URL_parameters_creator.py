@@ -1,5 +1,5 @@
 import streamlit as st
-import pyperclip
+from st_copy_to_clipboard import st_copy_to_clipboard
 
 from Functions import *
 from Functions.URL_UTM_creator import URL_UTM_creator
@@ -56,7 +56,6 @@ final_URL = URL_UTM_creator(URL, utm_source, utm_medium, utm_campaign, utm_id, u
 
 if final_URL != "":
     # Checks if the URL is not blank, if not displays copy button. 
-    if st.button('Copy'):
-        pyperclip.copy(final_URL)
-        st.success('URL copied successfully! :smiley: :smiley:')
-        st.balloons()
+    st.markdown("Click de following button to copy the link")
+    st_copy_to_clipboard(final_URL)
+
