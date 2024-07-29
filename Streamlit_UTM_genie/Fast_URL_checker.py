@@ -6,7 +6,7 @@ from Functions.Remove_URL_spaces import remove_URL_spaces
 
 # ------------------------------------------------------------------------------------------------------------------------------
 
-st.title("UTM genie :balloon:")
+st.title("UTM Genie :balloon:")
 st.text("")
 st.subheader("Enter the URL of the link you want to verify.")
 st.info("In case the URL does not contain any spaces, the appropriate message will be given.")
