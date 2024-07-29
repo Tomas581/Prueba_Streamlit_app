@@ -23,7 +23,7 @@ def remove_URL_spaces(url):
         st.warning("There were " + str(num_spaces) + " spaces in your URL, this is your new URL without spaces: ") 
         container = st.container(border=True)
         container.markdown(new_URL)
-        return ""
+        return new_URL
     elif url == "":
         return("")
     else:
