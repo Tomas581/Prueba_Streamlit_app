@@ -29,4 +29,4 @@ def remove_URL_spaces(url):
     else:
         st.balloons()
         st.success("There are no spaces in your URL :smiley: :smiley:")
-        return ""
+        return url
