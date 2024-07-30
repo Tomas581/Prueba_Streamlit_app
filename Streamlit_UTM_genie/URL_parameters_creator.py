@@ -21,7 +21,7 @@ st.text("The website URL must follow this format: https://www.example.com")
 URL = check_spaces(st.session_state.URL)
 if URL != "":   
     # Checks if the URL format is the correct one, if not displays an error message. 
-    if URL[0:12] != "https://www.":
+    if URL[0:8] != "https://":
         st.error("The URL format is not correct :angry: :rage: :disappointed: :dizzy_face:") 
         
 st.text_input("Campaign source *", key="utm_source")
