@@ -1,5 +1,6 @@
 import streamlit as st
 from st_copy_to_clipboard import st_copy_to_clipboard
+import webbrowser
 
 from Functions import *
 from Functions.Remove_URL_spaces import remove_URL_spaces
@@ -23,3 +24,4 @@ if final_URL != "":
     # Checks if the URL is not blank, if not displays copy button. 
     st.markdown("Click de following button to copy the link")
     st_copy_to_clipboard(final_URL)
+    webbrowser.open(final_URL)
