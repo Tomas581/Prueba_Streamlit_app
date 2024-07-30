@@ -15,7 +15,7 @@ def URL_UTM_creator(URL, utm_source, utm_medium, utm_campaign, utm_id = "", utm_
     if URL == "" or utm_source == "" or utm_medium == "" or utm_campaign == "":
         st.error("There is a mandatory field empty. The URL can not be provided :angry: :rage: :disappointed: :dizzy_face:")
         return ""
-    if URL[0:12] != "https://www.":
+    if URL[0:8] != "https://":
         st.error("The URL format is not correct :angry: :rage: :disappointed: :dizzy_face:") 
         return ""
     final_URL = URL + "?"  + "utm_source=" + utm_source + "&" + "utm_medium=" + utm_medium + "&" + "utm_campaign=" + utm_campaign
