@@ -24,4 +24,4 @@ if final_URL != "":
     # Checks if the URL is not blank, if not displays copy button. 
     st.markdown("Click de following button to copy the link")
     st_copy_to_clipboard(final_URL)
-    webbrowser.open(final_URL)
+    webbrowser.open_new_tab(final_URL)
