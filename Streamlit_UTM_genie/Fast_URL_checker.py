@@ -17,11 +17,13 @@ st.text_input("Enter your URL to check for spaces and, if found, remove them:", 
 st.text("")
 
 # ------------------------------------------------------------------------------------------------------------------------------
-
+from selenium import  webdriver
 final_URL = remove_URL_spaces(st.session_state.url_to_check)
 
 if final_URL != "":
     # Checks if the URL is not blank, if not displays copy button. 
     st.markdown("Click de following button to copy the link")
     st_copy_to_clipboard(final_URL)
-    webbrowser.open(final_URL)
+    driver = webdriver.Chrome()      
+    driver.get(final_URL)
+    #webbrowser.open(final_URL)
