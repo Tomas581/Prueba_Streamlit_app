@@ -25,6 +25,3 @@ if final_URL != "":
     st.markdown("Click de following button to copy the link")
     st_copy_to_clipboard(final_URL)
     webbrowser.open_new_tab(final_URL)
-
-import webbrowser
-st_copy_to_clipboard(webbrowser.open(final_URL))
