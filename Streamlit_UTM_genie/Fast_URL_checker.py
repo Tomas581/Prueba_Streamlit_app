@@ -27,4 +27,4 @@ if final_URL != "":
     webbrowser.open_new_tab(final_URL)
 
 import webbrowser
-st_copy_to_clipboard( webbrowser.open(final_URL)):
+st_copy_to_clipboard(webbrowser.open(final_URL)):
