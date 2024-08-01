@@ -27,4 +27,4 @@ if final_URL != "":
     webbrowser.open_new_tab(final_URL)
 
 if st.button('Haz clic aquí'):
-    webbrowser.open(URL_with_UTM)
+    webbrowser.open(final_URL)
